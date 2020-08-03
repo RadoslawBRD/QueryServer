@@ -7,7 +7,7 @@ public class QueryServer {
     //static int newPort=50504;
 
 
-
+//send port number to client that client can connect to the server
     public boolean genSRV(int port, int nextPort){
         try (ServerSocket listener = new ServerSocket(port)) {
             System.out.println("Querry Server waiting at: " + port);
