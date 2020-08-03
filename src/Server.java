@@ -12,7 +12,6 @@ public class Server {
             while(true){
                 if(queryServer.genSRV(port, portHolder.get_next_port())){
                     queryThread(portHolder.get_cur_port());
-                    queryServer = new QueryServer();
                 }
             }
         }catch(Exception e){
