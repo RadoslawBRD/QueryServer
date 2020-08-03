@@ -8,10 +8,10 @@ public class Server {
 
         try {
             QueryServer queryServer = new QueryServer();
-            PortHolder nextPort = new PortHolder(newPort);
+            PortHolder portHolder = new PortHolder(newPort);
             while(true){
-                if(queryServer.genSRV(port, nextPort.get_next_port())){
-                    queryThread(nextPort.get_cur_port());
+                if(queryServer.genSRV(port, portHolder.get_next_port())){
+                    queryThread(portHolder.get_cur_port());
                     queryServer = new QueryServer();
                 }
             }
