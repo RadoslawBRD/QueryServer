@@ -1,1 +1,1 @@
-Simple server+client with 2way communication
+Simple server+client with 2 way communication with lots of clients possible
